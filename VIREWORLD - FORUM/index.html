@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIREWORLD - Форум</title>
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="sources/css/main.css">
+     <link rel="stylesheet" href="sources/css/font.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="images/avatars/vw_avatar.png" alt="Иконка"></a>
+                <h1>VIREWORLD - Форум</h1>
+            </div>
+            
+            <div class="aside">
+                <div class="aside__sidebar">
+                    <nav class="sidebar">
+                        <a href="index.html" class="btn btn-select rubik">Форум</a>
+                        <a href="../VIREWORLD - SITE/index.html" class="btn rubik">Магазин</a>
+                    </nav>
+                </div>
+                <div class="aside__profile">
+                    <div class="notifications">
+                        <button class="btn-img" id="notify-btn">
+                            <img src="images/another/notify.png" alt="Уведомления">
+                        </button>
+                    </div>
+                    <div class="settings">
+                        <button class="btn-img" id="settings-btn">
+                            <img class="settings" src="images/another/settings.png" alt="Настройки">
+                        </button>
+                    </div>
+                    <div class="profile__logo" id="profile-btn">
+                        <button>
+                            <img class="profile__photo" src="images/avatars/profile1.png">
+                            <h3 class="white-sans rubik">D1aNiks</h3>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Начало Настройки (POPUP) -->
+         <div class="modal-box__settings" id="modal-settings">
+            <div class="modal-box__settings-body">
+                <div class="modal-box__settings-header">
+                    <h2>Настройки</h2>
+                </div>
+                <div class="modal-box__settings-main">
+                    <div class="notify-sound">
+                        <button class="btn-notify-sound" id="sound-btn">
+                            <h3>
+                                Звук Уведомлений: 
+                                <span class="sound-now white-sans rubik" id="sound-now">Включен</span>
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="notify-push">
+                        <button class="btn-notify-push" id="push-btn">
+                            <h3>
+                                Push-Уведомления: 
+                                <span class="push-now white-sans rubik" id="push-now">Включены</span>
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="language">
+                        <button class="btn-lang" id="language-btn">
+                            <h3>
+                                Язык форума: 
+                                <span class="lang-now white-sans rubik" id="lang-now">Русский</span>
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="choise-theme">
+
+                        <h4>Тема Оформления:
+                            <span id="theme-now" id="theme-now">Темная</span>
+                        </h4>
+
+                        <div class="choise-theme-buttons">
+                            <button class="btn-dark_theme btn-select-theme" id="dark-btn">
+                                <span class="dark_theme">
+                                    Темная
+                                </span>
+                            </button>
+    
+                            <button class="btn-light_theme" id="light-btn">
+                                <span class="light_theme">
+                                    Светлая
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- Конец Настройки (POPUP) -->
+        <!-- Начало Уведомления (POPUP) -->
+         <div class="modal-box__notify" id="modal-notify">
+            <div class="modal-box__notify-body">
+                <div class="modal-box__notify-header">
+                    <h2>Уведомления</h2>
+                </div>
+                <div class="modal-box__notify-main">
+                    <div class="notify">
+                        <div class="notify-title">
+                            <h1>ANNOUNCE</h1>
+                        </div>
+                        <div class="notify-msg">
+                            <h3>
+                                Вы зашли с аккаунта администратора форума!
+                                У вас есть все права для управления форумом.
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- Конец Уведомления (POPUP) -->
+        <!-- Начало Язык (POPUP) -->
+         <div class="modal-box__language" id="modal-language">
+            <div class="modal-box__language-body">
+                <div class="modal-box__language-header">
+                    <h2>Язык Форума</h2>
+                </div>
+                <div class="modal-box__language-main">
+                </div>
+            </div>
+         </div>
+        <!-- Конец Язык (POPUP) -->
+        <div class="main">
+            <div class="right">
+                <div class="forums">
+                    <div class="forum-container__difirent">
+                        <div class="difirent-forum">
+                            <div class="forum-header">
+                                <h2 class="white-sans rubik">Разное</h2>
+                            </div>
+                            <div class="forum-main">
+                                <div class="forum-containers">
+                                    <div class="forum-container-rules">
+                                        <button class="btn-forum forum-container-rules" id="forum-btn">
+                                            <div class="logo">
+                                                <img src="images/another/rules.png" alt="Правила">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">
+                                                    <h3 class="white-sans rubik">Правила Сервера</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p class="gray-sans rubik">
+                                                        В этом разделе представлена новейшая редакция правил <br>
+                                                        Сервера <span class="white-sans rubik">VIREWORLD</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forum-container__modes">
+                        <div class="mode-grief-forum">
+                            <div class="forum-header">
+                                <h2 class="white-sans rubik">Гриферское Выживание</h2>
+                            </div>
+                            <div class="forum-main">
+                                <div class="forum-containers">
+                                    <div class="forum-container-app-helper">
+                                        <button class="btn-forum forum-container-app-helper" id="forum-btn">
+                                            <div class="logo">
+                                                <img src="images/another/app.png" alt="Правила">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">
+                                                    <h3 class="white-sans rubik">Заявка на Хелпера</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p class="gray-sans rubik">
+                                                        В этом разделе вы можете подать заявку на <br>
+                                                        Должность Хелпера Сервера <span class="white-sans rubik">VIREWORLD</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div style="height: 10px; border-bottom: 1px solid gray;"></div>
+                                    <div class="forum-container-app-yt">
+                                        <button class="btn-forum forum-container-app-yt" id="forum-btn">
+                                            <div class="logo">
+                                                <img src="images/another/app.png" alt="Правила">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">
+                                                    <h3 class="white-sans rubik">Заявка на Ютубера</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p class="gray-sans rubik">
+                                                        В этом разделе вы можете подать заявку на <br>
+                                                        Должность Ютубера Сервера <span class="white-sans rubik">VIREWORLD</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div style="height: 10px; border-bottom: 1px solid gray;"></div>
+                                    <div class="forum-container-app-ideas">
+                                        <button class="btn-forum forum-container-app-ideas" id="forum-btn">
+                                            <div class="logo">
+                                                <img src="images/another/app.png" alt="Правила">
+                                            </div>
+                                            <div class="info">
+                                                <div class="name">
+                                                    <h3 class="white-sans rubik">Подача Идей для проекта</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p class="gray-sans rubik">
+                                                        В этом разделе вы можете подать свою Идея для <br>
+                                                        Проекта <span class="white-sans rubik">VIREWORLD</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="left">
+                <div class="left-header">
+                    <div class="name rubik white-sans">
+                        <h2>Чат</h2>
+                    </div>
+                    <div class="rules">
+                        <button class="rules-btn white-sans">
+                            <h4>
+                                Правила чата
+                            </h4>
+                        </button>
+                    </div>
+                </div>
+                <div class="left-main">
+                    <div class="messages">
+                        <div class="msg">
+                            <div class="msg__author">
+                                <img src="images/avatars/profile1.png" alt="Аватарка">
+                                <h4 class="rubik white-sans">
+                                    D1aNiks
+                                </h4>
+                            </div>
+                            <div class="msg__msg">
+                                <h3 class="msg__msg-text">
+                                    Я люблю не кушат какиш а кидаца какишам
+                                    Я люблю не кушат какиш а кидаца какишам
+                                    Я люблю не кушат какиш а кидаца какишам
+                                </h3>
+                                <h5 class="msg__msg-date">
+                                    Сегодня в 17:26
+                                </h5>
+                                <button class="msg__report-btn">
+                                    <h5 class="rubik white-notsans">
+                                        Пожаловаться
+                                    </h5>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="send">
+                        <div class="send__input" id="send-inp">
+                            <input type="text" placeholder="Ваше сообщение" id="send-msg">
+                        </div>
+                        <div class="send__buttons">
+                            <button id="send-btn">
+                                <img src="images/another/send.png" alt="Отправить">
+                            </button>
+                            <button>
+                                <img src="images/another/func.png" alt="Функции">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- Основное -->
+    </main>
+
+    <script src="sources/js/index.js"></script>
+</body>
+</html>
