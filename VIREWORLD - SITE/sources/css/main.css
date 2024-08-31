@@ -1,0 +1,421 @@
+* {
+    margin: 0px;
+    overflow-x: hidden;   
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+header {
+    padding: 10px 50px;
+    background-color: rgb(22,22,22);
+    position: fixed;
+    width: 1871;
+    min-height: 8vh;
+    vertical-align: middle;
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+header > * {
+    display: inline-block;
+    color: white;
+}
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    background-color:rgb(22,22,22);
+    width: auto;
+    height: 100%;
+}
+main > * {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+main > span,p {
+    display: block;
+}
+footer {
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(22,22,22);
+    width: 100%;
+    height: 191px;
+}
+footer > * {
+    display: inline-block;
+    width: 100%;
+    color: white;
+}
+.menu {
+    display: inline;
+}
+.m {
+    text-align: left;
+}
+.null {
+    width: 850px;
+    display: inline-block;
+}
+.null1 {
+    width: 950px;
+    display: inline-block;
+}
+
+.red {
+    color: firebrick;
+}
+.white {
+    color: white;
+}
+.italic {
+    color: white;
+    font-style: italic;
+}
+.choose-rules {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+.white_main {
+    color: white;
+    font-weight: 1400;
+    font-size: 30px;
+    font-family: Comfortaa;
+}
+.white_second {
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: Comfortaa;
+}
+.menushop {
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    font-family: Overpass;
+
+}
+
+/* DONATE */
+.donate {
+    color: rgb(255, 255, 255);
+    font-weight: 1200;
+    font-size: 25px;
+    font-family: Comfortaa;
+    text-align: center;
+}
+.price {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 21px;
+    font-family: Overpass;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 1771px;
+}
+.el1 {
+    justify-content: flex-start;
+}
+.el2 {
+    justify-content: flex-end;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 162,09px;
+    height: 21.5px;
+    padding: 0px;
+    margin: 0px;
+}
+.contain > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 162,09px;
+    height: 21.5px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+
+
+.btn {
+    cursor: pointer;
+}
+.btn:hover {
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    cursor: pointer;
+    transition: border .3s;
+}
+.btn-select {
+    border-bottom: rgb(53, 53, 255) 2px solid;
+    cursor: pointer;
+    transition: border .3s;
+}
+.btn-select:hover {
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    cursor: pointer;
+    transition: border .3s;
+}
+
+.btn-donate {
+    background-color: rgb(53, 53, 255);
+    border: rgb(53, 53, 255) 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: border .3s;
+}
+.btn-donate:hover {
+    background-color: rgb(53, 53, 255);
+    border: rgb(255, 255, 255) 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: border .3s;
+}
+.btn-close {
+    background-color: white;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+}
+.btn-close:hover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.btn-pay {
+    background-color: rgb(53, 53, 255);
+    border: 2px rgb(53, 53, 255) solid;
+    border-radius: 32px;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    transition: width .4s;
+}
+.btn-pay:hover {
+    background-color: rgb(53, 53, 255);
+    border: 2px rgb(53, 53, 255) solid;
+    border-radius: 32px;
+    height: 48px;
+    width: 148px;
+    cursor: pointer;
+    text-align: end;
+}
+.btn-pay:hover .modal-span{
+    visibility: visible;
+    position: relative;
+    font-size: medium;
+    top: -8px;
+    left: -8px;
+    opacity: 1;
+    display: inline;
+}
+.modal-span {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+.container1 {
+    display: flex;
+    align-items: center;
+    width: 1771px;
+}
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    width: 1771px;
+    justify-content: space-around;
+}
+
+
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, .8);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+} 
+.modal-box {
+    max-width: 500px;
+    padding: 25px;
+    z-index: 1;
+}
+.modal-box__head {
+    display: flex;
+    background-color: rgb(214, 214, 214);
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.modal-box__body {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    padding: 5px 10px;
+    min-height: 250px;
+    border-bottom-right-radius: 18px;
+}
+.ofert {
+    display: flex;
+    align-items: end;
+    width: 150px;
+    color: gray;
+}
+.payment {
+    display: flex;
+    align-items: end;
+    width: 350px;
+    justify-content: end;
+}
+
+
+.container-donates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1771px;
+    flex-wrap: nowrap;
+}
+.container-cases {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 1771px;
+    flex-wrap: nowrap;
+}
+
+/* КАРТОЧКИ ДОНАТОВ */
+
+.container-shop {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border: rgb(51, 51, 51) 2px solid;
+    border-radius: 7px;
+}
+.container-case {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    border: rgb(51, 51, 51) 2px solid;
+    border-radius: 7px;
+}
+/* HERO */
+.hero {
+    background-image: url(../../images/donates/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* TITAN */
+.titan {
+    background-image: url(../../images/donates/titan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* LORD */
+.lord {
+    background-image: url(../../images/donates/lord.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* AVENGER */
+.avenger {
+    background-image: url(../../images/donates/avenger.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* MAGISTER */
+.magister {
+    background-image: url(../../images/donates/magister.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* IMPERATOR */
+.imperator {
+    background-image: url(../../images/donates/imperator.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+/* DRAGON */
+.dragon {
+    background-image: url(../../images/donates/dragon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+
+/* КЕЙСЫ */
+.cristalcase {
+    background-image: url(../../images/cases/cristal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+.donatecase {
+    background-image: url(../../images/cases/donate.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+.creditcase {
+    background-image: url(../../images/cases/credit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
